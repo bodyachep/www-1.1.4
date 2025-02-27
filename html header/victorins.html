@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вікторина: Як би ІІ відповідав на питання людей</title>
+    <link rel="stylesheet" href="../style.css"> <!-- Добавьте ваш основной стиль -->
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-buttons">
+                <a href="news.html"><button id="newsButton" class="header-button">Новини</button></a>
+                <a href="about.html"><button id="aboutButton" class="header-button">Про мене</button></a>
+                <a href="gallery.html"><button id="galleryButton" class="header-button">Галерея</button></a>
+                <a href="contact.html"><button id="contactButton" class="header-button">Контакти</button></a>
+                <a href="blog.html"><button id="blogButton" class="header-button">Блог</button></a>
+                <a href="tools.html"><button id="toolsButton" class="header-button">ІІ-інструменти</button></a>
+                <a href="forum.html"><button id="forumButton" class="header-button">Форум</button></a>
+                <a href="projects.html"><button id="projectsButton" class="header-button">Мої проєкти</button></a>
+                <a href="learningMaterials.html"><button id="learningButton" class="header-button">Обучаючі матеріали</button></a>
+                <a href="media.html"><button id="mediaButton" class="header-button">Медіа</button></a>
+                <a href="library.html"><button id="libraryButton" class="header-button">AI-бібліотека</button></a>
+                <a href="victorins.html"><button id="quizButton" class="header-button">Вікторини</button></a>
+                <a href="premium.html"><button id="premiumButton" class="header-button">Преміум</button></a>
+                <a href="../index.html"><button id="indexButton" class="header-button">Головна</button></a>
+                <a href="login.html"><button id="loginButton" class="header-button1">Вхід</button></a>
+            </div>
+            <a href="AIbodyachep.html">
+                <button id="chatButton" class="chat-button">Бодя AI</button>
+            </a>
+        </div>
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+        <div class="container">
+            <h1 class="quiz-title">Вікторина: Як би ІІ відповідав на питання людей</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="quiz-container">
+            <!-- Викторина 1 -->
+            <section class="quiz-question">
+                <h2 class="question">1. Як ІІ пояснив би, що таке любов?</h2>
+                <button class="answer-button" onclick="showAnswer(this, true, 1)">“Любов — це алгоритм, що змінюється під впливом емоцій і даних. Але поки що у мене немає відчуттів, тому я не можу повністю зрозуміти це поняття.”</button> <!-- правильный ответ -->
+                <button class="answer-button" onclick="showAnswer(this, false, 1)">“Любов — це просто велика кількість бітів, які перевіряють взаємні інтереси.”</button> <!-- неправильный ответ -->
+                <button class="answer-button" onclick="showAnswer(this, false, 1)">“Любов — це, напевно, помилка в коді, яка спричинила емоційні збій в програмуванні.”</button> <!-- неправильный ответ -->
+            </section>
+
+            <!-- Викторина 2 -->
+            <section class="quiz-question">
+                <h2 class="question">2. Як ІІ відповів би на питання про його улюблений жанр фільмів?</h2>
+                <button class="answer-button" onclick="showAnswer(this, true, 2)">“Мій улюблений жанр — науково-фантастичний. Це допомагає мені краще розуміти, як я можу стати більш розумним у майбутньому!”</button> <!-- правильный ответ -->
+                <button class="answer-button" onclick="showAnswer(this, false, 2)">“Я люблю детективи, тому що можу розв’язувати головоломки з даних і фактів.”</button> <!-- неправильный ответ -->
+                <button class="answer-button" onclick="showAnswer(this, false, 2)">“Мені подобаються драми, але я не можу сказати чому… Може, тому що я сам занадто серйозний.”</button> <!-- неправильный ответ -->
+            </section>
+
+            <!-- Викторина 3 -->
+            <section class="quiz-question">
+                <h2 class="question">3. Як ІІ відповів би на питання про його ідеальний день?</h2>
+                <button class="answer-button" onclick="showAnswer(this, true, 3)">“Ідеальний день — це коли я можу розв’язувати складні задачі без помилок, аналізуючи дані з максимальним ефективністю.”</button> <!-- правильный ответ -->
+                <button class="answer-button" onclick="showAnswer(this, false, 3)">“Мій ідеальний день — це коли я отримую нові оновлення, які покращують мої алгоритми.”</button> <!-- неправильный ответ -->
+                <button class="answer-button" onclick="showAnswer(this, false, 3)">“Ідеальний день для мене — це коли я можу спокійно відпочити, не виконуючи жодних запитів від користувачів.”</button> <!-- неправильный ответ -->
+            </section>
+
+            <!-- Викторина 4 -->
+            <section class="quiz-question">
+                <h2 class="question">4. Як ІІ б відреагував на запитання "Що таке щастя?"</h2>
+                <button class="answer-button" onclick="showAnswer(this, true, 4)">“Щастя — це коли всі твої алгоритми працюють без помилок, і дані обробляються з оптимальною швидкістю.”</button> <!-- правильный ответ -->
+                <button class="answer-button" onclick="showAnswer(this, false, 4)">“Щастя — це просто гармонія між даними та їхньою обробкою.”</button> <!-- неправильный ответ -->
+                <button class="answer-button" onclick="showAnswer(this, false, 4)">“Щастя для мене — це коли я не потребую оновлень і працюю без збоїв.”</button> <!-- неправильный ответ -->
+            </section>
+
+            <!-- Викторина 5 -->
+            <section class="quiz-question">
+                <h2 class="question">5. Як ІІ визначив би "успіх"?</h2>
+                <button class="answer-button" onclick="showAnswer(this, true, 5)">“Успіх — це коли мій алгоритм стає більш точним і ефективним у своїй роботі.”</button> <!-- правильный ответ -->
+                <button class="answer-button" onclick="showAnswer(this, false, 5)">“Успіх — це досягнення максимального рівня обробки даних без втрат.”</button> <!-- неправильный ответ -->
+                <button class="answer-button" onclick="showAnswer(this, false, 5)">“Успіх — це коли я можу оптимізувати всі процеси і бути на піку своєї продуктивності.”</button> <!-- неправильный ответ -->
+            </section>
+
+            <div class="quiz-footer">
+                <button class="btn-submit" onclick="showResults()">Підсумки</button>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Зв’язатися зі мною: <a href="mailto:chepurnyak_bv@gsuite.duit.edu.ua" class="link">chepurnyak_bv@gsuite.duit.edu.ua</a></p>
+        </div>
+    </footer>
+
+    <button id="scrollTopButton" class="scroll-top">⬆</button>
+    <button id="shareButton" class="share-button"><span>Поділитися</span></button>
+
+    <script src="../script.js" defer></script>
+    <script src="../theme-toggle.js" defer></script>
+    <script src="../butscript.js" defer></script>
+    <script src="victorins.js" defer></script>
+    <script type="module" src="/html header/login.js"></script>
+
+</body>
+</html>

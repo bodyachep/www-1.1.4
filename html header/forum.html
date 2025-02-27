@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <link rel="icon" href="antibmw16.ico" sizes="16x16" type="image/x-icon">
+    <link rel="icon" href="antibmw32.ico" sizes="32x32" type="image/x-icon">
+    <link rel="icon" href="antibmw48.ico" sizes="48x48" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форум</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <!-- Верхнє меню форуму -->
+            <div class="header-buttons">
+                <a href="news.html"><button class="header-button">Новини</button></a>
+                <a href="about.html"><button class="header-button">Про мене</button></a>
+                <a href="gallery.html"><button class="header-button">Галерея</button></a>
+                <a href="contact.html"><button class="header-button">Контакти</button></a>
+                <a href="blog.html"><button class="header-button">Блог</button></a>
+                <a href="tools.html"><button class="header-button">ІІ-інструменти</button></a>
+                <a href="forum.html"><button class="header-button active">Форум</button></a>
+                <a href="projects.html"><button class="header-button">Мої проєкти</button></a>
+                <a href="learningMaterials.html"><button class="header-button">Обучаючі матеріали</button></a>
+                <a href="media.html"><button class="header-button">Медіа</button></a>
+                <a href="library.html"><button class="header-button">AI-бібліотека</button></a>
+                <a href="victorins.html"><button class="header-button">Вікторини</button></a>
+                <a href="premium.html"><button class="header-button">Преміум</button></a>
+                <a href="../index.html"><button class="header-button">Головна</button></a>
+                <a href="login.html"><button id="loginButton" class="header-button1">Вхід</button></a>
+            </div>
+            <a href="AIbodyachep.html">
+                <button class="chat-button">Бодя AI</button>
+            </a> 
+        </div>
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+    </header>
+
+    <main>
+        <div class="container forum-content">
+            <section class="forum">
+                <h2 class="forum-title">Форум</h2>
+                
+                <!-- Панель фільтрів -->
+                <div class="forum-filters">
+                    <input type="text" class="forum-search" placeholder="Пошук тем..." id="searchInput">
+                    <button class="forum-button" id="newTopicButton">Нова тема</button>
+                </div>
+                
+                <!-- Список тем на форумі -->
+                <div class="forum-topics">
+                    <div class="forum-topic">
+                        <h3 class="topic-title">Останні оновлення сайту</h3>
+                        <p class="topic-description">Обговорення нових функцій і оновлень на сайті.</p>
+                        <a href="forum_topic.html" class="forum-link">Переглянути тему</a>
+                    </div>
+
+                    <div class="forum-topic">
+                        <h3 class="topic-title">Штучний інтелект</h3>
+                        <p class="topic-description">Дискусії про застосування ШІ у різних сферах.</p>
+                        <a href="forum_topic.html" class="forum-link">Переглянути тему</a>
+                    </div>
+
+                    <div class="forum-topic">
+                        <h3 class="topic-title">Пропозиції та запитання</h3>
+                        <p class="topic-description">Ваша думка про покращення сайту, запитання до адміністрації.</p>
+                        <a href="forum_topic.html" class="forum-link">Переглянути тему</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Зв’язатися зі мною: <a href="mailto:chepurnyak_bv@gsuite.duit.edu.ua" class="link">chepurnyak_bv@gsuite.duit.edu.ua</a></p>
+        </div>
+    </footer>
+
+    <button id="scrollTopButton" class="scroll-top">⬆</button>
+    <button id="shareButton" class="share-button"><span>Поділитися</span></button>
+
+    <script src="../script.js" defer></script>
+    <script src="../theme-toggle.js" defer></script>
+    <script src="../butscript.js" defer></script>
+    <script type="module" src="/html header/login.js"></script>
+
+
+</body>
+</html>
